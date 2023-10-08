@@ -5,7 +5,13 @@
 	"description": "React hook for Lanyard for tracking your Discord presence.",
 	"repository": "https://github.com/alii/use-lanyard",
 	"main": "./dist/index.js",
-	"exports": "./dist/index.mjs",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
 	"typings": "./dist/index.d.ts",
 	"license": "MIT",
 	"sideEffects": false,
